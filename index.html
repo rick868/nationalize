@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nationalize</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+</head>
+<body>
+    <div class="container-wrapper">
+        <header class="header-section">
+            <div class="logo">Nationalize</div>
+
+            <div class="social-links">
+                <ul class="nav-links">
+                    <li class="nav-items">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <div class="main-title">
+                <p class="title">Predict the Ethnicity of the name</p>
+            </div>
+            <form id="name-form" class="form-section">
+                <input type="text" class="get-name" id="name" placeholder="Enter name, Last or Full"  required
+                />
+                <button class="submit-btn" id="submit-btn" type="submit">
+                    <span>Search</span>
+                </button>
+            </form>
+            <div id="results" class="results-section">
+                <p>Enter a name above to see Predictions</p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

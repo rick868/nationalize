@@ -1,0 +1,100 @@
+*{
+    margin: 0%;
+    padding: 0%;   
+    box-sizing: border-box; 
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f4f8; /* Light gray background */
+    color: #334155; /* Darker text for readability */
+}
+
+.header-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: hsl(0, 0%, 95%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 2.5rem;
+    padding: 20px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    padding: 20px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: hsl(0, 0%, 20%);
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover{
+    color: hsl(0, 0%, 40%);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.main-title{
+    padding: 30px;;
+    text-align: center;
+    font-size: 3rem;
+    color: hsl(0, 0%, 20%);
+    margin-bottom: 20px;
+}
+.title{
+    font-size: 5rem;
+}
+
+.form-section{
+    margin-top: 30px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.get-name{
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.submit-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    color: white;
+    background-color: hsl(224, 94%, 37%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: hsl(224, 94%, 27%);
+}
+
+.results-section {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1rem;
+}
+
