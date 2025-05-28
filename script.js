@@ -17,16 +17,16 @@ RequestBtn.addEventListener("click", async function (e) {
     console.log(result);
     
     const { name, country } = result;
-    if(country.length>0){
+    if(country.length > 0){
 
-    resultsSection.innerHTML = `<p>${name} is form ${country[0].country_id} with ${ country[0].probability * 100 }% certainty</p>`;
+    resultsSection.innerHTML = `<p><strong>${name}</strong> is form <strong>${country[0].country_id}</strong> with <strong>${ country[0].probability * 1000 }%</strong> certainty</p>`;
 }
   } catch (error) {
     resultsSection.textContent =
       "An error occurred while fetching data. Please try again.";
     return;
   }
-  console.log(result);
+//   console.log(result);
   RequestBtn.removeAttribute("disabled");
   RequestBtn.innerHTML = `<p>Search</p>`;
 });
